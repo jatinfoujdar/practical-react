@@ -1,22 +1,22 @@
-import "./styles.css";
-import { FaReact } from 'react-icons/fa';
-import {MdAlarm} from 'react-icons/md';
+import {FaReact} from 'react-icons/fa';
+import { MdAlarm } from 'react-icons/md';
 import { IconContext } from 'react-icons';
+import './App.css';
+import React from 'react';
 
-
-export default function App() {
+function App() {
   return (
-        // <IconContext.Provider value ={{color: 'blue', size: '10rem'}}
-        //<IconContext />
-    <div className="App">
+   <><IconContext.Provider value={{ color: 'red', size: '5rem' }} /><div className="App">
+      <h1>hello </h1>
 
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-
-      <FaReact color='yellow' size='10rem'/>
-   <MdAlarm  color='blue' size='10rem' /> 
- 
+        //<FaReact color='yellow' size='10rem'/>
+ //  <MdAlarm  color='blue' size='10rem' /> 
     </div>
-   
-  );
+    <IconContext.Provider /></>
+  )
 }
+
+export default App;
+
+
+  
